@@ -1,0 +1,11 @@
+# Install the matching CUDA builds of torch and torchvision first.
+numpy<2
+Pillow
+scipy
+tqdm
+PyYAML
+wandb
+peft
+torch-geometric
+ftfy
+regex

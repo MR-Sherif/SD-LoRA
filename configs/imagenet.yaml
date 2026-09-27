@@ -1,0 +1,44 @@
+# ------ root_path/dataset_name ------
+root_path: './data'
+
+
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+# load_cache: True
+# load_pre_feat: True
+
+
+# ------ Hyperparamters ------
+search_hp: True
+# search_hp: False
+
+search_scale: [7, 3]
+search_step: [200, 20]
+
+init_beta: 1
+init_alpha: 1.17
+
+
+# ------ Basic Config ------
+dataset: 'imagenet'
+shots: 16
+backbone: ['ViT-B/16']
+
+lr: 0.001
+augment_epoch: 10
+train_epoch: 20
+# Shared entry-point settings
+preset_id: 'imagenet'
+wandb_project: 'ICML_Imagenet'
+script_defaults:
+  batch_size: 224
+  lora_r: 8
+num_workers: 32
+eval_batch_size: null
+persistent_workers: true
+herding_uses_train_batch_size: true
+herding_pin_memory: true
+early_stopping_patience: 15
+save_graph_checkpoint: true
