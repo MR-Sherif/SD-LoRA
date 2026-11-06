@@ -100,6 +100,16 @@ Macro-average top-1 accuracy across 11 datasets with CLIP ViT-B/16, as reported 
 | CLIP-LoRA | 72.5% | 75.4% | 77.4% | 80.3% | 83.0% | No |
 | **SD-LoRA (ours)** | **74.9%** | **77.2%** | **80.4%** | **82.7%** | **85.0%** | **No** |
 
+### Base-to-Novel Generalization
+
+Under the MaPLe protocol, SD-LoRA achieves the following 11-dataset aggregate, as reported in [Table 2 of the paper](https://arxiv.org/pdf/2611.07063#page=9):
+
+| Method | Base accuracy | Novel accuracy | Harmonic mean (HM) |
+| :--- | ---: | ---: | ---: |
+| **SD-LoRA** | **87.23%** | **86.59%** | **86.91%** |
+
+The reported HM is calculated from the aggregate base and novel accuracies as `2 × Base × Novel / (Base + Novel)`.
+
 ## Acknowledgements
 
 This implementation builds on [OpenAI CLIP](https://github.com/openai/CLIP) and the [Tip-Adapter](https://github.com/gaopengcuhk/Tip-Adapter) code and dataset protocol. The bundled CLIP implementation retains its [MIT license](clip/LICENSE). The SD-LoRA repository uses [AGPL-3.0](LICENSE).
