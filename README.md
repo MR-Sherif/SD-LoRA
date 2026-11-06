@@ -1,7 +1,7 @@
 # SD-LoRA: Training-Time Structural Distillation into LoRA for Few-Shot Vision-Language Adaptation
 
 [![NeurIPS 2026](https://img.shields.io/badge/NeurIPS-2026-blue.svg)](https://neurips.cc/)
-![arXiv coming soon](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)
+[![arXiv:2611.07063](https://img.shields.io/badge/arXiv-2611.07063-b31b1b.svg)](https://arxiv.org/abs/2611.07063)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Implementation-ee4c2c.svg)](https://pytorch.org/)
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-green.svg)](LICENSE)
 
@@ -11,7 +11,7 @@
 
 **Institution:** Edge Hill University
 
-**Paper:** arXiv coming soon
+**Paper:** [arXiv:2611.07063](https://arxiv.org/abs/2611.07063) · Accepted at NeurIPS 2026
 
 ---
 
@@ -35,6 +35,10 @@ Few-shot adaptation of vision-language models needs to learn fine-grained visual
 3. **Deploy the adapted encoder** with the cache classifier; the graph teacher is not used at inference.
 
 The figure is rendered from the authors’ framework diagram.
+
+## Related Work
+
+For a closely related training-only graph-adapter approach, see **TOGA**: [CVPR 2026 paper](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html) · [code](https://github.com/MR-Sherif/TOGA).
 
 ## Installation
 
@@ -101,13 +105,32 @@ This implementation builds on [OpenAI CLIP](https://github.com/openai/CLIP) and 
 
 ## Citation
 
-If you use this research, please cite the accepted NeurIPS 2026 paper. The arXiv identifier and final proceedings details will be added when available.
+If you use SD-LoRA, please cite its [public arXiv preprint](https://arxiv.org/abs/2611.07063). The paper is accepted at NeurIPS 2026; proceedings metadata will be added when available.
 
 ```bibtex
-@inproceedings{mohammad2026sdlora,
+@misc{mohammad2026sdlora,
   title     = {SD-LoRA: Training-Time Structural Distillation into LoRA for Few-Shot Vision-Language Adaptation},
   author    = {Mohammad, Mohammed Rahman Sherif Khan and Behera, Ardhendu and Pradhan, Sandip and Kumar, Swagat and Liu, Yonghuai},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026}
+  year      = {2026},
+  eprint    = {2611.07063},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  doi       = {10.48550/arXiv.2611.07063},
+  url       = {https://arxiv.org/abs/2611.07063},
+  note      = {Accepted at NeurIPS 2026}
+}
+```
+
+For the related training-only graph-adapter work, please cite [TOGA](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html):
+
+```bibtex
+@inproceedings{Mohammad_2026_CVPR,
+  author    = {Mohammad, Mohammed Rahman Sherif Khan and Behera, Ardhendu and Pradhan, Sandip and Kumar, Swagat and Ahmed, Amr},
+  title     = {Training-Only Heterogeneous Image-Patch-Text Graph Supervision for Advancing Few-Shot Learning Adapters},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2026},
+  pages     = {19613--19622},
+  url       = {https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html}
 }
 ```

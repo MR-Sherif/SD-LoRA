@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use SD-LoRA, please cite the paper in preferred-citation."
+title: "SD-LoRA: Training-Time Structural Distillation into LoRA for Few-Shot Vision-Language Adaptation"
+type: software
+authors:
+  - family-names: Mohammad
+    given-names: Mohammed Rahman Sherif Khan
+  - family-names: Behera
+    given-names: Ardhendu
+  - family-names: Pradhan
+    given-names: Sandip
+  - family-names: Kumar
+    given-names: Swagat
+  - family-names: Liu
+    given-names: Yonghuai
+repository-code: https://github.com/MR-Sherif/SD-LoRA
+license: AGPL-3.0-only
+preferred-citation:
+  type: generic
+  title: "SD-LoRA: Training-Time Structural Distillation into LoRA for Few-Shot Vision-Language Adaptation"
+  authors:
+    - family-names: Mohammad
+      given-names: Mohammed Rahman Sherif Khan
+    - family-names: Behera
+      given-names: Ardhendu
+    - family-names: Pradhan
+      given-names: Sandip
+    - family-names: Kumar
+      given-names: Swagat
+    - family-names: Liu
+      given-names: Yonghuai
+  year: 2026
+  doi: 10.48550/arXiv.2611.07063
+  url: https://arxiv.org/abs/2611.07063
+  notes: "Accepted at NeurIPS 2026; arXiv:2611.07063."
+references:
+  - type: conference-paper
+    title: "Training-Only Heterogeneous Image-Patch-Text Graph Supervision for Advancing Few-Shot Learning Adapters"
+    authors:
+      - family-names: Mohammad
+        given-names: Mohammed Rahman Sherif Khan
+      - family-names: Behera
+        given-names: Ardhendu
+      - family-names: Pradhan
+        given-names: Sandip
+      - family-names: Kumar
+        given-names: Swagat
+      - family-names: Ahmed
+        given-names: Amr
+    year: 2026
+    conference:
+      name: CVPR 2026
+    start: 19613
+    end: 19622
+    url: https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html
