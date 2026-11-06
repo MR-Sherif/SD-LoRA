@@ -53,3 +53,20 @@ references:
     start: 19613
     end: 19622
     url: https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html
+  - type: generic
+    title: "Batch-Conditioned Semantic Anchors for Robust Transductive Adaptation of Vision-Language Models"
+    authors:
+      - family-names: Mohammad
+        given-names: Mohammed Rahman Sherif Khan
+      - family-names: Behera
+        given-names: Ardhendu
+      - family-names: Pradhan
+        given-names: Sandip
+      - family-names: Kumar
+        given-names: Swagat
+      - family-names: Ahmed
+        given-names: Amr
+    year: 2026
+    doi: 10.48550/arXiv.2611.06993
+    url: https://arxiv.org/abs/2611.06993
+    notes: "Accepted at NeurIPS 2026; arXiv:2611.06993."

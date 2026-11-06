@@ -15,6 +15,11 @@
 
 ---
 
+## More Work from Our Team
+
+- **TOGA** — *Training-Only Heterogeneous Image-Patch-Text Graph Supervision for Advancing Few-Shot Learning Adapters*. Our **CVPR 2026** paper on training-only graph supervision for few-shot vision-language adaptation. [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html) · [Code](https://github.com/MR-Sherif/TOGA)
+- **JPTA** — *Batch-Conditioned Semantic Anchors for Robust Transductive Adaptation of Vision-Language Models*. Our **NeurIPS 2026** paper on test-time adaptation of vision-language models. [Paper](https://arxiv.org/abs/2611.06993) · [Code](https://github.com/MR-Sherif/JPTA)
+
 ## Abstract
 
 Few-shot adaptation of vision-language models needs to learn fine-grained visual distinctions from limited supervision while keeping inference efficient. Lightweight CLIP adapters usually work with global image embeddings, leaving token-level structure underused. SD-LoRA uses a relation-aware graph Transformer (RGT) over visual tokens and class-text features **during training**, then distills its structural signal into a LoRA-adapted CLIP backbone. Prototype Predictive Alignment connects graph-conditioned representations to support-derived class prototypes. At inference, the graph branch is removed; prediction uses CLIP-LoRA and a cache classifier.
@@ -35,10 +40,6 @@ Few-shot adaptation of vision-language models needs to learn fine-grained visual
 3. **Deploy the adapted encoder** with the cache classifier; the graph teacher is not used at inference.
 
 The figure is rendered from the authors’ framework diagram.
-
-## Related Work
-
-For a closely related training-only graph-adapter approach, see **TOGA**: [CVPR 2026 paper](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html) · [code](https://github.com/MR-Sherif/TOGA).
 
 ## Installation
 
@@ -121,7 +122,7 @@ If you use SD-LoRA, please cite its [public arXiv preprint](https://arxiv.org/ab
 }
 ```
 
-For the related training-only graph-adapter work, please cite [TOGA](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html):
+For our CVPR 2026 paper, please cite [TOGA](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html):
 
 ```bibtex
 @inproceedings{Mohammad_2026_CVPR,
@@ -132,5 +133,21 @@ For the related training-only graph-adapter work, please cite [TOGA](https://ope
   year      = {2026},
   pages     = {19613--19622},
   url       = {https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html}
+}
+```
+
+For our NeurIPS 2026 work on test-time adaptation, please cite [JPTA](https://arxiv.org/abs/2611.06993):
+
+```bibtex
+@misc{mohammad2026jpta,
+  title     = {Batch-Conditioned Semantic Anchors for Robust Transductive Adaptation of Vision-Language Models},
+  author    = {Mohammad, Mohammed Rahman Sherif Khan and Behera, Ardhendu and Pradhan, Sandip and Kumar, Swagat and Ahmed, Amr},
+  year      = {2026},
+  eprint    = {2611.06993},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  doi       = {10.48550/arXiv.2611.06993},
+  url       = {https://arxiv.org/abs/2611.06993},
+  note      = {Accepted at NeurIPS 2026}
 }
 ```
