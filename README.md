@@ -121,33 +121,3 @@ If you use SD-LoRA, please cite its [public arXiv preprint](https://arxiv.org/ab
   note      = {Accepted at NeurIPS 2026}
 }
 ```
-
-For our CVPR 2026 paper, please cite [TOGA](https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html):
-
-```bibtex
-@inproceedings{Mohammad_2026_CVPR,
-  author    = {Mohammad, Mohammed Rahman Sherif Khan and Behera, Ardhendu and Pradhan, Sandip and Kumar, Swagat and Ahmed, Amr},
-  title     = {Training-Only Heterogeneous Image-Patch-Text Graph Supervision for Advancing Few-Shot Learning Adapters},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month     = {June},
-  year      = {2026},
-  pages     = {19613--19622},
-  url       = {https://openaccess.thecvf.com/content/CVPR2026/html/Mohammad_Training-Only_Heterogeneous_Image-Patch-Text_Graph_Supervision_for_Advancing_Few-Shot_Learning_Adapters_CVPR_2026_paper.html}
-}
-```
-
-For our NeurIPS 2026 work on test-time adaptation, please cite [JPTA](https://arxiv.org/abs/2611.06993):
-
-```bibtex
-@misc{mohammad2026jpta,
-  title     = {Batch-Conditioned Semantic Anchors for Robust Transductive Adaptation of Vision-Language Models},
-  author    = {Mohammad, Mohammed Rahman Sherif Khan and Behera, Ardhendu and Pradhan, Sandip and Kumar, Swagat and Ahmed, Amr},
-  year      = {2026},
-  eprint    = {2611.06993},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV},
-  doi       = {10.48550/arXiv.2611.06993},
-  url       = {https://arxiv.org/abs/2611.06993},
-  note      = {Accepted at NeurIPS 2026}
-}
-```
